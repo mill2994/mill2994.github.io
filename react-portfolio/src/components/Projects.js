@@ -35,7 +35,8 @@ const projectData = [
     {
         title: 'Portfolio Site',
         description: 'Located here! I hand built this site to give myself full control over all aspects of the site. My goal was to keep it streamlined, yet unique and to have a fun space to keep my projects.',
-        languages: ['JavaScript', 'React', 'HTML', 'CSS']
+        languages: ['JavaScript', 'React', 'HTML', 'CSS'],
+        source: "https://github.com/mill2994/mill2994.github.io.git"
     },
     {
         title: 'Tower Defense Based Game',
