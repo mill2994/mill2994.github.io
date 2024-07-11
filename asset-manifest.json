@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.ccbd5837.js",
-    "static/js/453.bb257cf5.chunk.js": "/static/js/453.bb257cf5.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.b8ad1300.css",
+    "main.js": "/static/js/main.fb99323c.js",
+    "static/media/UmichCourt.JPG": "/static/media/UmichCourt.8e3292178e4638073d33.JPG",
+    "static/media/BEATosu.jpeg": "/static/media/BEATosu.d0f3f82eebe5482d1366.jpeg",
+    "static/media/roch.jpeg": "/static/media/roch.0b603dd7b49ca9f1c89f.jpeg",
+    "static/media/falls.JPG": "/static/media/falls.e7d0054a5d1fee52e61b.JPG",
+    "static/media/WRiFTHomeowner.png": "/static/media/WRiFTHomeowner.8609aac52e3ec5cd70eb.png",
+    "static/media/cat-sunset.jpeg": "/static/media/cat-sunset.a3f4f8548ea6b09a6fcd.jpeg",
+    "static/media/flight.jpeg": "/static/media/flight.ba75a7c25aba3cc845dd.jpeg",
+    "static/media/msu.jpeg": "/static/media/msu.17b80def5e6f3d0d854a.jpeg",
+    "static/media/golden-record.png": "/static/media/golden-record.e9cdb89ad31f8178126d.png",
+    "static/media/boyne.JPG": "/static/media/boyne.96d66b0ecc7fda3d9d95.JPG",
+    "static/media/CedarPointPinball.JPG": "/static/media/CedarPointPinball.be5a0cff6be0abdcbd8f.JPG",
+    "static/media/northern-lights.jpeg": "/static/media/northern-lights.cb596d40311ea68dce77.jpeg",
+    "static/media/wheel.jpeg": "/static/media/wheel.7c6525040d5ddb4ae29a.jpeg",
+    "static/media/zombies.PNG": "/static/media/zombies.f46b04aae647ecea2092.PNG",
+    "static/media/peppy.PNG": "/static/media/peppy.a30c1df1550760913748.PNG",
+    "static/media/minecraft.PNG": "/static/media/minecraft.6e0183220d7589075d3b.PNG",
+    "static/media/jellyfish.jpeg": "/static/media/jellyfish.304cd59388ab52ee2afc.jpeg",
+    "static/media/msu-stadium.JPG": "/static/media/msu-stadium.cbb648a4fc0adb67ffaa.JPG",
+    "static/media/Miller-Ben-Resume.pdf": "/static/media/Miller-Ben-Resume.e45bce0a99d94b32d537.pdf",
+    "static/media/GPA_calc.png": "/static/media/GPA_calc.9448f5a9b7a6492744ca.png",
+    "static/media/Discord.png": "/static/media/Discord.3f59831af068ff3f6517.png",
     "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.ccbd5837.js.map": "/static/js/main.ccbd5837.js.map",
-    "453.bb257cf5.chunk.js.map": "/static/js/453.bb257cf5.chunk.js.map"
+    "main.b8ad1300.css.map": "/static/css/main.b8ad1300.css.map",
+    "main.fb99323c.js.map": "/static/js/main.fb99323c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.ccbd5837.js"
+    "static/css/main.b8ad1300.css",
+    "static/js/main.fb99323c.js"
   ]
 }
