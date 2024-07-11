@@ -1,0 +1,172 @@
+.me {
+    display: grid;
+    place-items: center;
+    text-align: center; /* Centers the text within the p element */
+    margin-top: 90px;
+}
+
+.me-intro {
+    max-width: calc(min(80%, 450px));
+}
+
+.golden-record {
+    margin-bottom: 40px;
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.golden-message {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.golden-message .p {
+    text-align: center;
+    width: 100%;
+}
+
+.golden-record {
+    width: 90%;
+    max-width: 450px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.scrolling-image {
+    transition: opacity 0.5s ease-in-out;
+    border: 2px solid black; /* Inner border */
+}
+
+.fade {
+    opacity: 0;
+}
+
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.image-container img {
+    position: relative;
+    max-height: 96%;
+    max-width: 96%;
+
+}
+
+.image-controls {
+    margin-top: 5px; /* Space between the image and the index */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+.arrow {
+    background: none;
+    border: none;
+    color: black; /* Default color for light mode */
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    user-select: none;
+}
+
+.dark-mode .arrow{
+    color: white; /* Color for dark mode */
+}
+
+.light-mode .image-index {
+    color: black;
+}
+
+.arrow:hover {
+    color: grey; /* Optional: Change color on hover for better UX */
+}
+
+.divider {
+    width: calc(min(80%, 450px));
+}
+
+.image-index {
+    font-size: 18px;
+    color: white; /* Adjust color as needed */
+}
+
+.frame-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.me-border {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: max(400px, 60vh);
+    background: radial-gradient(circle, rgba(80, 80, 80, 0.9), rgba(180, 180, 180, 0.9));
+    border-top: 40px solid rgb(83, 55, 42);
+    border-bottom: 40px solid rgb(83, 55, 42);
+    border-left: 20px solid rgb(98, 70, 57);
+    border-right: 20px solid rgb(98, 70, 57);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.35);
+}
+
+.me-border::before,
+.me-border::after {
+    content: '';
+    position: absolute;
+    top: 0px;   /* Adjust position to make sure it's outside the border */
+    left: 0px;  /* Adjust position to make sure it's outside the border */
+    width: calc(100%); /* Adjust size to make sure it covers the area outside the border */
+    height: calc(100%); /* Adjust size to make sure it covers the area outside the border */
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.me-border::before {
+    border: 2px solid black; /* Outer border */
+}
+
+.me-border::after {
+    border: 2px solid black; /* Inner border */
+    top: -42px;   /* Move the inner border inside */
+    left: -22px;  /* Move the inner border inside */
+    width: calc(100% + 44px); /* Adjust size to make sure it covers the area inside the border */
+    height: calc(100% + 84px); /* Adjust size to make sure it covers the area inside the border */
+}
+
+.dark-mode .me-border {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+}
+
+.page-image-divider-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14vw; /* Adjust the gap between images if needed */
+    margin-top: 30px;
+    margin-bottom: 40px; /* Could have another class which determined each page dividers margins */
+}
+
+.page-image-divider-me img {
+    display: block;
+    filter: drop-shadow(6px 4px 2px lightpink) blur(0px) drop-shadow(-6px -4px 3px indianred);
+}
+
+/* Rules for larger screens */
+@media (min-width: 610px) {
+    .me-border {
+        width: 60vw;
+        height: max(380px, 65vh);
+    }
+
+}

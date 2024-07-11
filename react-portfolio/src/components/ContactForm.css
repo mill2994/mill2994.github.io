@@ -1,0 +1,598 @@
+.contact {
+    background: linear-gradient(
+            to top left,
+            rgba(127, 205, 255, 0.85),
+            rgba(29, 162, 216, 0.85)
+    );
+    border: 3px solid dodgerblue; /* Dark blue border */
+
+
+    width: min(600px, 90vw);
+    height: 400px;
+    /* height: min(400px, calc(0.8 * 80vw)); */
+    margin: 0 auto; /* Center the form */
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    color: black;
+    border-bottom-left-radius: 40% 48%;
+    border-bottom-right-radius: 40% 48%;
+    border-top-left-radius: 40% 48%;
+    border-top-right-radius: 40% 48%;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+
+    align-items: center; /* Center items horizontally */
+    min-width: 280px;
+}
+
+.dark-mode .contact {
+    box-shadow: 0 10px 18px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.contact h2 {
+    text-align: center;
+    text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.35);
+    padding-top: 15px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    /* background-color: rgba(0, 153, 51, 0.9); /* Light green, semi-transparent */
+    background-color: rgba(255, 170, 165, 0.9); /* Light green, semi-transparent */
+    border: 2px solid indianred;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    width: 70%;
+    /*height: 5%; */
+    outline: none;
+    transition: border-color 0.3s;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+
+.contact input[type="text"]::placeholder,
+.contact input[type="email"]::placeholder,
+.contact textarea::placeholder {
+    color: rgba(205, 92, 92, .75); /* Placeholder text color */
+    font-size: 18px;
+}
+
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+    border-color: white;
+}
+
+.contact textarea {
+    height: 150px; /* Make the message box taller */
+    max-width: 70%;
+    min-width: 70%;
+    max-height: 150px;
+    min-height: 39px;
+}
+
+.contact button {
+    background-color: rgba(255, 170, 165, 0.9);
+    border: 2px solid indianred;
+    color: indianred;
+    border-radius: 5px;
+    padding: 6px;
+    width: 20%; /* Make button same width as input boxes */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: Futura;
+    font-size: 18px;
+}
+
+.contact button:hover {
+    background-color: rgba(255, 150, 145, 1); /* Darker green on hover */
+}
+
+.form-info {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.form-info {
+    top: 50px;
+}
+
+
+/* CONTINENTS */
+.surface {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.continents-container {
+    width: 100%;
+    height: 100%;
+}
+
+.continents {
+    width: 10%;
+    height: 10%;
+    background-color: seagreen;
+    border-radius: 30%;
+    position: absolute;
+}
+
+/* north america */
+
+.cont1 {
+    width: 8%;
+    height: 7%;
+    top: 18%;
+    left: 8%;
+}
+
+.cont2 {
+    width: 15%;
+    height: 12%;
+    top: 19%;
+    left: 14%;
+}
+
+.cont3 {
+    width: 18%;
+    height: 10%;
+    top: 25%;
+    left: 14%;
+}
+
+.cont4 {
+    width: 14%;
+    height: 8%;
+    top: 32%;
+    left: 16%;
+}
+
+.cont22 {
+    width: 2%;
+    height: 8%;
+    top: 36%;
+    left: 26%;
+}
+
+.cont26 {
+    width: 6%;
+    height: 12%;
+    top: 36%;
+    left: 18%;
+}
+
+.cont27 {
+    width: 6%;
+    height: 5%;
+    top: 46%;
+    left: 20%;
+}
+
+.cont28 {
+    width: 2%;
+    height: 4%;
+    top: 50%;
+    left: 22%;
+}
+
+.cont29 {
+    width: 8%;
+    height: 8%;
+    top: 14%;
+    left: 26%;
+}
+
+.cont30 {
+    width: 6%;
+    height: 4%;
+    top: 24%;
+    left: 27%;
+}
+
+.cont31 {
+    background-color: rgba(29, 162, 216, 0.90);
+    width: 3%;
+    height: 3%;
+    top: 30%;
+    left: 24%;
+}
+
+.cont32 {
+    width: 1%;
+    height: 4%;
+    top: 31%;
+    left: 25%;
+}
+.cont33 {
+    width: 1%;
+    height: 1%;
+    top: 30%;
+    left: 24%;
+}
+
+/* south america */
+
+.cont5 {
+    width: 10%;
+    height: 5%;
+    top: 52%;
+    left: 22%;
+}
+
+.cont6 {
+    width: 12%;
+    height: 5%;
+    top: 55%;
+    left: 23%;
+}
+
+.cont7 {
+    width: 15%;
+    height: 5%;
+    top: 58%;
+    left: 22%;
+}
+
+.cont8 {
+    width: 13%;
+    height: 14%;
+    top: 58%;
+    left: 24%;
+}
+
+.cont23 {
+    width: 8%;
+    height: 10%;
+    top: 69%;
+    left: 27%;
+}
+
+.cont24 {
+    width: 5%;
+    height: 8%;
+    top: 76%;
+    left: 28%;
+}
+
+/* antartica */
+.cont25 {
+    background-color: white;
+    width: 40%;
+    height: 8%;
+    top: 92%;
+    left: 30%;
+}
+
+/*  Africa */
+
+.cont9 {
+    width: 5%;
+    height: 5%;
+    top: 72%;
+    left: 55%;
+}
+
+.cont10 {
+    width: 9%;
+    height: 10%;
+    top: 64%;
+    left: 53%;
+}
+
+.cont11 {
+    width: 13%;
+    height: 15%;
+    top: 52%;
+    left: 51%;
+}
+
+.cont12 {
+    width: 17%;
+    height: 18%;
+    top: 40%;
+    left: 45%;
+}
+
+.cont34 {
+    width: 4%;
+    height: 10%;
+    top: 44%;
+    left: 43%;
+}
+
+.cont35 {
+    width: 2%;
+    height: 6%;
+    top: 68%;
+    left: 64%;
+}
+
+/* Europe */
+
+.cont13 {
+    width: 8%;
+    height: 14%;
+    top: 8%;
+    left: 35%;
+}
+
+.cont14 {
+    width: 15%;
+    height: 8%;
+    top: 28%;
+    left: 47%;
+}
+
+.cont36 {
+    width: 2%;
+    height: 4%;
+    top: 26%;
+    left: 45%;
+}
+
+.cont15 {
+    width: 4%;
+    height: 9%;
+    top: 32%;
+    left: 45%;
+}
+
+.cont16 {
+    width: 4%;
+    height: 16%;
+    top: 39%;
+    left: 63%;
+}
+
+.cont37 {
+    width: 5%;
+    height: 8%;
+    top: 34%;
+    left: 59%;
+}
+
+.cont45 {
+    width: 4%;
+    height: 10%;
+    top: 17%;
+    left: 49%;
+}
+
+.cont46 {
+    width: 8%;
+    height: 4%;
+    top: 17%;
+    left: 49%;
+}
+
+.cont47 {
+    width: 4%;
+    height: 5%;
+    top: 19%;
+    left: 55%;
+}
+
+/* Asia */
+
+.cont17 {
+
+    width: 34%;
+    height: 16%;
+    top: 19%;
+    left: 55%;
+}
+
+.cont44 {
+
+    width: 28%;
+    height: 10%;
+    top: 15%;
+    left: 58%;
+}
+
+.cont48 {
+
+    width: 22%;
+    height: 10%;
+    top: 12%;
+    left: 61%;
+}
+
+.cont18 {
+    width: 23%;
+    height: 20%;
+    top: 29%;
+    left: 63%;
+}
+
+.cont38 {
+    width: 3%;
+    height: 7%;
+    top: 47%;
+    left: 72%;
+}
+
+.cont39 {
+    width: 6%;
+    height: 7%;
+    top: 45%;
+    left: 78%;
+}
+
+/* Australia */
+.cont19 {
+    width: 10%;
+    height: 12%;
+    top: 67%;
+    left: 81%;
+}
+
+.cont40 {
+    width: 2%;
+    height: 4%;
+    top: 72%;
+    left: 92%;
+}
+
+.cont20 {
+    width: 5%;
+    height: 3%;
+    top: 59%;
+    left: 78%;
+}
+
+.cont21 {
+    width: 2%;
+    height: 7%;
+    top: 52%;
+    left: 85%;
+}
+
+.cont41 {
+    width: 3%;
+    height: 2%;
+    top: 62%;
+    left: 87%;
+}
+
+/* Japan and Hawaii */
+
+.cont42 {
+    width: 2%;
+    height: 8%;
+    top: 36%;
+    left: 88%;
+}
+
+.cont43 {
+    width: 2%;
+    height: 2%;
+    top: 42%;
+    left: 4%;
+}
+
+
+/* SCREEN SIZE HEIGHTS */
+
+@media (min-width: 1000px) {
+
+}
+
+/* Media Query for screens larger than 100px */
+@media (max-width: 1000px) {
+
+}
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 780px) {
+    .contact {
+        height: 380px;
+    }
+
+    .contact textarea {
+        height: 140px; /* Make the message box taller */
+        max-height: 140px;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        font-size: 16px;
+    }
+
+    .contact input[type="text"]::placeholder,
+    .contact input[type="email"]::placeholder,
+    .contact textarea::placeholder {
+        font-size: 16px;
+    }
+
+    .contact button {
+        font-size: 16px;
+    }
+
+}
+
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 610px) {
+    .contact {
+        height: 360px;
+    }
+
+    .contact textarea {
+        height: 120px; /* Make the message box taller */
+        max-height: 120px;
+    }
+}
+
+
+@media (max-width: 510px) {
+    .contact {
+        height: 340px;
+    }
+
+    .contact textarea {
+        height: 105px; /* Make the message box taller */
+        max-height: 105px;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        font-size: 13px;
+    }
+
+    .contact input[type="text"]::placeholder,
+    .contact input[type="email"]::placeholder,
+    .contact textarea::placeholder {
+        font-size: 13px;
+    }
+
+    .contact button {
+        font-size: 13px;
+    }
+
+}
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 430px) {
+    .contact {
+        height: 320px;
+    }
+
+    .contact textarea {
+        height: 85px; /* Make the message box taller */
+        max-height: 85px;
+    }
+}
+
+
+@media (max-width: 385px) {
+    .contact {
+        height: 300px;
+    }
+
+    .contact textarea {
+        height: 65px; /* Make the message box taller */
+        max-height: 65px;
+    }
+}

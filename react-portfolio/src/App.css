@@ -1,38 +1,47 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace; /* Courier New for regular text */
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light-mode  {
+  background-color: #fdfdfb;
+  /* background: linear-gradient(to bottom, #fdfdfd, whitesmoke);
+  /* background-color: whitesmoke; /* Light mode background color */
+  color: black; /* Light mode font color */
 }
+
+.dark-mode  {
+  /* background: linear-gradient(to bottom, #1c1e1f, black); */
+  background-color: #1c1e1f;
+  /* background-color: #0d0a20; */
+    /* background-color: #051427; /* Dark mode background color */
+  color: white; /* Dark mode font color */
+}
+
+html {
+  background-color: #051427; /* Dark mode background color */
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Courier, monospace; /* Courier for titles and headers */
+
+}
+
+/* Non-header text */
+p, ul, li, input, textarea, form, a /* Add other relevant selectors */ {
+  font-family: Futura;
+}
+
+/*
+<a target="_blank" href="https://icons8.com/icon/11450/planet">Planet</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+ */

@@ -1,0 +1,814 @@
+.home {
+    /* padding: 20px; */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    position: relative; /* Ensure position relative for stacking context */
+    overflow: hidden; /* Clip the shadow above the intro section */
+}
+
+
+/* ---------------------------------------------------- */
+/* SKY BACKGROUND START */
+
+.intro-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max(115vh, 550px); /* Adjust height to include the curve section */
+    z-index: 1; /* Ensure it's below other elements */
+    overflow: hidden;
+    border-bottom-left-radius: 70% 10%;
+    border-bottom-right-radius: 70% 10%;
+}
+
+.light-mode .intro-background {
+    background: linear-gradient(to bottom, dodgerblue, lightskyblue);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .intro-background {
+    background: linear-gradient(to bottom, #1c1e1f, black);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.25);
+}
+
+.dark-mode .intro-background .star-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* animation: rotate-stars 50s infinite linear; /* Add rotation animation */
+}
+
+/*
+@keyframes rotate-stars {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+*/
+
+
+
+
+.dark-mode .star-container .star {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 20%;
+}
+
+.dark-mode .star-container .star1 {
+    top: 150px;
+    left: 10%;
+}
+
+.dark-mode .star-container .star2 {
+    top: 200px;
+    left: 60%;
+}
+
+.dark-mode .star-container .star3 {
+    top: 132px;
+    left: 86%;
+}
+
+.dark-mode .star-container .star4 {
+    top: 257px;
+    left: 76%;
+}
+
+.dark-mode .star-container .star5 {
+    top: 471px;
+    left: 94%;
+}
+
+.dark-mode .star-container .star6 {
+    top: 760px;
+    left: 83%;
+}
+
+.dark-mode .star-container .star7 {
+    top: 250px;
+    left: 30%;
+}
+
+.dark-mode .star-container .star8 {
+    top: 400px;
+    left: 64%;
+}
+
+.dark-mode .star-container .star9 {
+    top: 367px;
+    left: 84%;
+}
+
+.dark-mode .star-container .star10 {
+    top: 565px;
+    left: 72%;
+}
+
+.dark-mode .star-container .star11 {
+    top: 749px;
+    left: 51%;
+}
+
+.dark-mode .star-container .star12 {
+    top: 688px;
+    left: 34%;
+}
+
+.dark-mode .star-container .star13 {
+    top: 529px;
+    left: 47%;
+}
+
+.dark-mode .star-container .star14 {
+    top: 638px;
+    left: 58%;
+}
+
+.dark-mode .star-container .star15 {
+    top: 420px;
+    left: 39%;
+}
+
+.dark-mode .star-container .star16 {
+    top: 420px;
+    left: 5%;
+}
+
+.dark-mode .star-container .star17 {
+    top: 520px;
+    left: 19%;
+}
+
+.dark-mode .star-container .star18 {
+    top: 620px;
+    left: 91%;
+}
+
+.dark-mode .star-container .star19 {
+    top: 691px;
+    left: 7%;
+}
+
+.dark-mode .star-container .star20 {
+    top: 120px;
+    left: 44%;
+}
+
+.dark-mode .star-container .star21 {
+    top: 820px;
+    left: 14%;
+}
+
+.dark-mode .star-container .star22 {
+    top: 843px;
+    left: 31%;
+}
+
+.dark-mode .star-container .star23 {
+    top: 861px;
+    left: 54%;
+}
+
+.dark-mode .star-container .star24 {
+    top: 800px;
+    left: 68%;
+}
+
+.dark-mode .star-container .star25 {
+    top: 851px;
+    left: 94%;
+}
+
+
+
+/* SKY BACKGROUND END */
+/* ---------------------------------------------------- */
+/* WELCOME MESSAGE START */
+
+.intro-container {
+    position: absolute; /* Position relative to the closest positioned ancestor (.home) */
+
+    z-index: 2; /* Ensure it's above .intro-background */
+    left: 10%;
+    width: calc(min(70vw, 450px));
+    height: calc(min(70vw, 450px));
+    top: 150px; /* 300 pixels from the top */
+}
+
+.dark-mode .intro {
+    text-shadow: 3px 3px 6px rgba(255, 170, 165, 0.75);
+    /* text-shadow: 8px 4px 8px rgba(0, 0, 0, 0.35); */
+}
+
+.light-mode .intro {
+    text-shadow: 3px 3px 6px rgba(255, 170, 165, 0.95);
+    /* text-shadow: 8px 4px 8px rgba(0, 0, 0, 0.35); */
+}
+
+.intro .larger {
+    font-size: calc(0.24 * min(70vw, 450px)); /* Larger font size for "I'm Ben" */
+    line-height: 1.2; /* Adjust line-height for smaller gap */
+    position: absolute; /* Ensure positioning is relative to .intro */
+    top: 20%;
+    left: 9%;
+    z-index: 2;
+
+}
+
+.intro .subtitle {
+    font-size: calc(0.16 * min(70vw, 450px));
+    top: 43%;
+    left: 9%;
+    line-height: 1.2; /* Adjust line-height for smaller gap */
+    position: absolute; /* Ensure positioning is relative to .intro */
+
+    z-index: 2;
+
+}
+
+.intro .smaller {
+    font-size: calc(0.07 * min(70vw, 450px));
+    line-height: 1.2; /* Adjust line-height for smaller gap */
+    position: absolute; /* Ensure positioning is relative to .intro */
+    z-index: 2;
+
+    left: 25%;
+    top: 66%;
+
+}
+
+.intro .smaller2 {
+
+    font-size: calc(0.07 * min(70vw, 450px));
+    line-height: 1.2; /* Adjust line-height for smaller gap */
+    position: absolute; /* Ensure positioning is relative to .intro */
+    z-index: 2;
+    left: 15%;
+    top: 73%;
+
+}
+
+.intro .smaller3 {
+
+    font-size: calc(0.2 * min(70vw, 450px));
+    line-height: 1.2; /* Adjust line-height for smaller gap */
+    position: absolute; /* Ensure positioning is relative to .intro */
+    z-index: 2;
+    left: 44%;
+    top: 79%;
+
+}
+
+.light-mode .intro {
+    color: white;
+}
+
+.dark-mode .intro {
+    color: white;
+}
+
+/* WELCOME MESSAGE END */
+/* ---------------------------------------------------- */
+/* START SUN */
+
+.sun-container {
+
+    position: absolute; /* Position relative to the closest positioned ancestor (.home) */
+
+    z-index: 1; /* Ensure it's above .intro-background */
+    left: 10%;
+    width: calc(min(70vw, 450px));
+    height: calc(min(70vw, 450px));
+    top: 150px; /* 300 pixels from the top */
+
+    transition: transform .4s ease-in-out; /* Smooth transition for transform property */
+}
+
+.sun-container.out {
+    transform: translateY(150vh);
+}
+
+.sun-container.in {
+    transform: translateY(0px);
+}
+
+/* Hide the sun */
+.sun-container.hidden {
+    visibility: hidden; /* Hide the sun */
+}
+
+.circle {
+    background: linear-gradient(145deg, #D14009, #F5A623);
+
+    border-radius: 50%;
+    width: calc(100% - 6px); /* Subtract border size from the total size of moon surface */
+    height: calc(100% - 6px); /* Adjust size as needed */
+
+    /* Positioning */
+    position: absolute; /* Position relative to the closest positioned ancestor (.home) */
+
+    z-index: 1; /* Ensure it's above .intro-background */
+
+    border: 3px solid white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Triangles around a central point */
+.triangle-container {
+    position: absolute;
+    transform: rotate(45deg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Ensure triangles are behind intro text */
+    /* animation: spin 35s linear infinite; /* Adjust animation duration and timing function as needed */
+}
+
+/* Triangles around a central point */
+.triangle-container2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Ensure triangles are behind intro text */
+    /* animation: spin2 35s linear infinite; /* Adjust animation duration and timing function as needed */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(405deg);
+    }
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Half of the total width (20px) */
+    border-right: 10px solid transparent; /* Half of the total width (20px) */
+    border-bottom: 20px solid #F5A623; /* Height of the triangle (20px) */
+    position: absolute;
+
+}
+
+
+/* TODO: Triangle could be 7% of the height/width */
+/* TODO:Gap between sun and shine could be double that, so  top: calc(0% - 40px); is top: calc(-14%); or top: calc(107%);*/
+/* Offset becomes minus whatever half of the border bottom is from 50% */
+
+/* minus 150 from top*/
+/* Top triangle */
+.triangle:nth-child(1) {
+    top: calc(0% - 40px); /* Top aligns with the top of triangle, minus 20 for triangle, and minus 20 for gap between */
+    left: calc(50% - 10px); /* Adjust left position for centering */
+}
+
+/* minus 150 from left*/
+/* Left triangle */
+.triangle:nth-child(2) {
+    top: calc(50% - 10px); /* Adjust top position for centering */
+    left: calc(0% - 40px); /* Adjust left position for centering */
+    transform: rotate(270deg); /* Rotate the triangle by 180 degrees */
+}
+
+/* TODO: Triangles are a constant 20px currently, so go left 10px (half) to line their center at 50% */
+/* Consider if I want the triangles to be constant, or to scale, if scale then these offsets must scale too */
+
+/* plus 150 to top*/
+/* Bottom triangle */
+.triangle:nth-child(3) {
+    top: calc(100% + 20px); /* 100% below, plus 20 constant pixels below */
+    left: calc(50% - 10px); /* Adjust left position for centering */
+    transform: rotate(180deg); /* Rotate the triangle by 180 degrees */
+}
+
+/* plus 150 to left*/
+/* Right triangle */
+.triangle:nth-child(4) {
+    top: calc(50% - 10px); /* Adjust top position for centering */
+    left: calc(100% + 20px); /* Adjust left position for centering */
+    transform: rotate(90deg); /* Rotate the triangle by 180 degrees */
+}
+
+/* Center triangle
+.triangle:nth-child(5) {
+    top: calc(-10px);
+    left: calc(-10px);
+}
+ */
+
+
+/* END SUN */
+/* ---------------------------------------------------- */
+/* START MOON */
+
+.moon-surface {
+    width: calc(100% - 6px); /* Subtract border size from the total size of moon surface */
+    height: calc(100% - 6px); /* Adjust size as needed */
+    background: linear-gradient(145deg, gray, darkgray);
+
+    border-radius: 50%;
+
+    /* Positioning */
+    position: absolute; /* Position relative to the closest positioned ancestor (.home) */
+
+    z-index: 1; /* Ensure it's above .intro-background */
+
+    border: 3px solid white;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.35);
+}
+
+.crater-container {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+
+    border-radius: 50%;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+
+    z-index: 1;
+    border: 2px solid black;
+
+    opacity: 50%;
+}
+
+.crater1 {
+    width: 35%;
+    height: 10%;
+    top: 8%;
+    left: 32%;
+}
+
+.crater2 {
+    top: 42%;
+    left: 36%;
+}
+
+.crater3 {
+    width: 15%;
+    height: 13%;
+    top: 83%; /* 300 pixels from the top */
+    left: 40%; /* 30% from the left */
+}
+
+.crater4 {
+    width: 13%;
+    height: 20%;
+    top: 50%; /* 300 pixels from the top */
+    left: 82%; /* 30% from the left */
+}
+
+.crater5 {
+    width: 13%;
+    height: 10%;
+    top: 62%; /* 300 pixels from the top */
+    left: 7%; /* 30% from the left */
+}
+
+.crater6 {
+    width: 5%;
+    height: 5%;
+    top: 16%; /* 300 pixels from the top */
+    left: 20%; /* 30% from the left */
+}
+
+.moon {
+    width: 100%;
+    height: 100%;
+
+    position: absolute; /* Position relative to the closest positioned ancestor (.home) */
+
+    z-index: 1; /* Ensure it's above .intro-background */
+
+    /* height: 72.5%; This will make the spin at the correct place*/
+
+}
+
+.moon-container.out {
+    transform: translateY(-100vh);
+}
+
+.moon-container.in {
+    transform: translateY(0px);
+}
+
+/* Hide the sun */
+.moon-container.hidden {
+    visibility: hidden; /* Hide the sun */
+}
+
+.moon-orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* animation: rotate-moon 150s infinite linear; /* */
+}
+
+
+.moon-container {
+    width: calc(min(70vw, 450px));
+    height: calc(min(70vw, 450px));
+    left: 10%;
+    top: 150px;
+    position: absolute;
+    transition: transform .4s ease-in-out; /* Smooth transition for transform property */
+
+}
+
+@keyframes rotate-moon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* END MOON */
+/* ---------------------------------------------------- */
+
+.split {
+    position: relative;
+    margin-top: calc(max(115vh, 550px)); /* Position the curve section */
+    height: 30px;
+
+}
+
+.body {
+    width: 100%;
+    margin-top: 20px;
+}
+
+h2 {
+
+    font-size: 2rem;
+}
+
+
+/* END GENERAL */
+/* ---------------------------------------------------- */
+/* START ABOUT */
+
+.about {
+    display: grid;
+    text-align: left; /* Centers the text within the p element */
+    /* border-bottom-left-radius: 60% 35%; */
+    /* border-bottom-right-radius: 60% 35%; */
+    /* padding-bottom: 35px;
+    padding-top: 10px; */
+}
+
+
+
+.light-mode .about {
+    /* box-shadow: 0 6px 6px rgba(0, 0, 0, .1); */
+}
+
+.dark-mode .about {
+    /* box-shadow: 0 6px 6px rgba(255, 255, 255, 0.1); */
+}
+
+
+.body h2 {
+    font-size: min(6vw, 40px);
+    text-shadow: 2px 2px 4px rgba(255, 170, 165, 0.75);
+    /* text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.15); */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.body h2::after {
+    content: '';
+    display: block;
+    width: 110%; /* Adjust this value to make the underline longer */
+    height: 5px; /* Adjust thickness as needed */
+    background-color: indianred; /* Adjust color as needed */
+    border-radius: 10px; /* Adjust roundness as needed */
+    margin-bottom: 25px; /* Space between text and underline */
+    position: relative;
+    left: -5%; /* Adjust this value to shift the underline to the left */
+}
+
+
+
+.body-background {
+    width: 100vw;
+
+    /*
+    margin: 0 auto;
+    background: #fdfdfb;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    */
+
+}
+
+.about p {
+    max-width: min(75%, 600px);
+    margin: 0 auto; /* Center the paragraph block */
+
+}
+
+
+/* END ABOUT */
+/* ---------------------------------------------------- */
+/* START FAVORITE PROJECT */
+
+.favorite-projects {
+    /* margin-top: 40px; /* Space between sections */
+    display: grid;
+    text-align: center;
+}
+
+.favorite-projects {
+    /* border-bottom-left-radius: 70% 15%; */
+    /* border-bottom-right-radius: 70% 15%; */
+    /* padding-bottom: 15px;
+    margin-bottom: 20px; */
+}
+
+.light-mode .favorite-projects {
+    /* box-shadow: 0 6px 6px rgba(0, 0, 0, .1); */
+}
+
+.dark-mode .favorite-projects {
+    /* box-shadow: 0 6px 6px rgba(255, 255, 255, 0.1); */
+}
+
+/* END FAVORITE PROJECT */
+/* ---------------------------------------------------- */
+/* START FORM */
+.contact-title {
+    /* margin-top: 40px; /* Space between sections */
+    display: grid;
+
+}
+
+/* Within the ContactForm.css file */
+.contact {
+    margin-top: 40px; /* Space between sections */
+}
+
+/* END FORM */
+/* ---------------------------------------------------- */
+
+.welcome-sign p {
+    position: absolute;
+    top: calc(max(calc(115vh - 150px), 500px));
+    left: 70%;
+}
+
+.page-image-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14vw; /* Adjust the gap between images if needed */
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.page-image-divider img {
+    display: block;
+    filter: drop-shadow(6px 4px 2px lightpink) blur(0px) drop-shadow(-6px -4px 3px indianred);
+}
+
+/*
+LINKS TO PAGES
+
+ */
+
+.body a {
+    margin: 15px auto 0px;
+    color: indianred;
+}
+
+.favorite-projects a {
+    font-size: 30px;
+}
+
+.about a {
+    font-size: 20px;
+}
+
+
+@media (min-width: 1000px) {
+    p {
+        font-size: 22px;
+    }
+
+    .favorite-projects a {
+        font-size: 28px;
+    }
+
+    .about a {
+        font-size: 24px;
+    }
+
+}
+
+/* Media Query for screens larger than 100px */
+@media (max-width: 1000px) {
+    p {
+        font-size: 20px;
+    }
+
+    .favorite-projects a {
+        font-size: 26px;
+    }
+
+    .about a {
+        font-size: 22px;
+    }
+
+    .welcome-sign p {
+        left: 70%;
+    }
+}
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 780px) {
+    p {
+        font-size: 18px;
+    }
+
+    .favorite-projects a {
+        font-size: 24px;
+    }
+
+    .about a {
+        font-size: 20px;
+    }
+}
+
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 610px) {
+    p {
+        font-size: 17px;
+    }
+
+    .favorite-projects a {
+        font-size: 23px;
+    }
+
+    .about a {
+        font-size: 19px;
+    }
+
+    .welcome-sign p {
+        left: 40%;
+    }
+}
+
+
+@media (max-width: 510px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 430px) {
+    p {
+        font-size: 15px;
+    }
+
+    .favorite-projects a {
+        font-size: 21px;
+    }
+
+    .about a {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 385px) {
+    p {
+        font-size: 14px;
+    }
+}

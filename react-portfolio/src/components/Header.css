@@ -1,0 +1,235 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(10, 10, 20, 0.97); /* Lighter black with transparency */
+    color: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    font-family: Courier, monospace; /* Courier for header */
+    opacity: 95%;
+}
+
+.header.dark-mode {
+    color: white;
+    background-color: #ffaaa5; /* Dark black color */
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.35);
+}
+
+.header.light-mode {
+    color: white;
+    background-color: #ffaaa5;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    margin-left: 2%;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Courier, monospace; /* Ensure logo inherits Courier font */
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    margin-right: 1%;
+    height: 100%; /* Ensure nav items are centered vertically */
+    width: 50%;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li   {
+    font-family: Courier, monospace; /* Ensure navigation items inherit Courier font */
+    color: white;
+    font-size: 28px;
+}
+
+.nav-menu ul li:not(.divider)   {
+    cursor: pointer;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 1px;
+}
+
+.nav-menu ul li:hover:not(.button, .divider)  {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background on hover */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+.theme-toggle-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Center image vertically */
+}
+
+.theme-toggle-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* color: #ccc; */
+}
+
+.header .nav-menu li.active,
+.header .logo.active {
+
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 1000px) {
+    .nav-menu ul li {
+        font-size: 32px;
+    }
+
+    .logo {
+        font-size: 34px;
+    }
+
+    .header {
+        height: 75px;
+    }
+
+    .theme-toggle-button {
+        height: 60px;
+    }
+}
+
+/* Media Query for screens larger than 100px */
+@media (max-width: 1000px) {
+    .nav-menu ul li {
+        font-size: 26px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .theme-toggle-button {
+        height: 50px;
+    }
+}
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 780px) {
+    .nav-menu ul li {
+        font-size: 24px; /* Smaller font size for small screens */
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .header {
+        height: 65px;
+    }
+
+    .theme-toggle-button {
+        height: 48px;
+    }
+}
+
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 610px) {
+    .nav-menu ul li {
+        font-size: 22px; /* Smaller font size for small screens */
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .theme-toggle-button {
+        height: 45px;
+    }
+}
+
+
+@media (max-width: 510px) {
+    .nav-menu ul li {
+        font-size: 18px; /* Smaller font size for small screens */
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .header {
+        height: 55px;
+    }
+
+    .theme-toggle-button {
+        height: 38px;
+    }
+}
+
+/* Media Query for screens smaller than 500px */
+@media (max-width: 430px) {
+    .nav-menu ul li {
+        /* font-size: calc(0.05 * min(70vw, 450px)); */
+        font-size: 16px; /* Smaller font size for small screens */
+        margin-left: 2px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .theme-toggle-button {
+        height: 34px;
+    }
+}
+
+
+@media (max-width: 385px) {
+    .nav-menu ul li {
+        /* font-size: calc(0.05 * min(70vw, 450px)); */
+        font-size: 13px; /* Smaller font size for small screens */
+        margin-left: 2px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .header {
+        height: 45px;
+    }
+
+    .theme-toggle-button {
+        height: 30px;
+    }
+}
+
+
