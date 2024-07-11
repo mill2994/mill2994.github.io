@@ -331,7 +331,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2; /* Ensure triangles are behind intro text */
-    animation: spin 35s linear infinite; /* Adjust animation duration and timing function as needed */
+    /* animation: spin 35s linear infinite; /* Adjust animation duration and timing function as needed */
 }
 
 /* Triangles around a central point */
@@ -343,7 +343,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2; /* Ensure triangles are behind intro text */
-    animation: spin2 35s linear infinite; /* Adjust animation duration and timing function as needed */
+    /* animation: spin2 35s linear infinite; /* Adjust animation duration and timing function as needed */
 }
 
 @keyframes spin {
@@ -525,7 +525,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    animation: rotate-moon 150s infinite linear; /* */
+    /* animation: rotate-moon 150s infinite linear; /* */
 }
 
 
