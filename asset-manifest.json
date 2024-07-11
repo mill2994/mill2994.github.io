@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8ad1300.css",
+    "main.css": "/static/css/main.e21f7cef.css",
     "main.js": "/static/js/main.a6003cd8.js",
     "static/media/UmichCourt.JPG": "/static/media/UmichCourt.8e3292178e4638073d33.JPG",
     "static/media/BEATosu.jpeg": "/static/media/BEATosu.d0f3f82eebe5482d1366.jpeg",
@@ -24,11 +24,11 @@
     "static/media/GPA_calc.png": "/static/media/GPA_calc.9448f5a9b7a6492744ca.png",
     "static/media/Discord.png": "/static/media/Discord.3f59831af068ff3f6517.png",
     "index.html": "/index.html",
-    "main.b8ad1300.css.map": "/static/css/main.b8ad1300.css.map",
+    "main.e21f7cef.css.map": "/static/css/main.e21f7cef.css.map",
     "main.a6003cd8.js.map": "/static/js/main.a6003cd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8ad1300.css",
+    "static/css/main.e21f7cef.css",
     "static/js/main.a6003cd8.js"
   ]
 }
