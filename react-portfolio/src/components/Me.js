@@ -103,6 +103,7 @@ function Me({ isDarkMode }) {
             {isGoldenRecordVisible ? (
                 <div className={`golden-message ${isFading ? 'fade' : ''}`}>
                     <p>Click the record to decode it, and begin.</p>
+                    <p>(Image may load improperly at first, press next to fix)</p>
                     <br />
 
                     <img
