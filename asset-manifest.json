@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e21f7cef.css",
-    "main.js": "/static/js/main.a6003cd8.js",
+    "main.js": "/static/js/main.688faff2.js",
     "static/media/UmichCourt.JPG": "/static/media/UmichCourt.8e3292178e4638073d33.JPG",
     "static/media/BEATosu.jpeg": "/static/media/BEATosu.d0f3f82eebe5482d1366.jpeg",
     "static/media/roch.jpeg": "/static/media/roch.0b603dd7b49ca9f1c89f.jpeg",
@@ -25,10 +25,10 @@
     "static/media/Discord.png": "/static/media/Discord.3f59831af068ff3f6517.png",
     "index.html": "/index.html",
     "main.e21f7cef.css.map": "/static/css/main.e21f7cef.css.map",
-    "main.a6003cd8.js.map": "/static/js/main.a6003cd8.js.map"
+    "main.688faff2.js.map": "/static/js/main.688faff2.js.map"
   },
   "entrypoints": [
     "static/css/main.e21f7cef.css",
-    "static/js/main.a6003cd8.js"
+    "static/js/main.688faff2.js"
   ]
 }
