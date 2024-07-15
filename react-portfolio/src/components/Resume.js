@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css';
-import resumePdf from './Miller-Ben-Resume.pdf'; // Adjust the path as necessary
+import resumePdf from './ResumePDF/Miller-Ben-Resume.pdf'; // Adjust the path as necessary
 
 function Resume() {
     return (
