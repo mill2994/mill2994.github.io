@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e21f7cef.css",
-    "main.js": "/static/js/main.688faff2.js",
+    "main.js": "/static/js/main.ef7dc5e9.js",
     "static/media/UmichCourt.JPG": "/static/media/UmichCourt.8e3292178e4638073d33.JPG",
     "static/media/BEATosu.jpeg": "/static/media/BEATosu.d0f3f82eebe5482d1366.jpeg",
     "static/media/roch.jpeg": "/static/media/roch.0b603dd7b49ca9f1c89f.jpeg",
@@ -20,15 +20,15 @@
     "static/media/minecraft.PNG": "/static/media/minecraft.6e0183220d7589075d3b.PNG",
     "static/media/jellyfish.jpeg": "/static/media/jellyfish.304cd59388ab52ee2afc.jpeg",
     "static/media/msu-stadium.JPG": "/static/media/msu-stadium.cbb648a4fc0adb67ffaa.JPG",
-    "static/media/Miller-Ben-Resume.pdf": "/static/media/Miller-Ben-Resume.e45bce0a99d94b32d537.pdf",
+    "static/media/Miller-Ben-Resume.pdf": "/static/media/Miller-Ben-Resume.696fafcb457211ce59e4.pdf",
     "static/media/GPA_calc.png": "/static/media/GPA_calc.9448f5a9b7a6492744ca.png",
     "static/media/Discord.png": "/static/media/Discord.3f59831af068ff3f6517.png",
     "index.html": "/index.html",
     "main.e21f7cef.css.map": "/static/css/main.e21f7cef.css.map",
-    "main.688faff2.js.map": "/static/js/main.688faff2.js.map"
+    "main.ef7dc5e9.js.map": "/static/js/main.ef7dc5e9.js.map"
   },
   "entrypoints": [
     "static/css/main.e21f7cef.css",
-    "static/js/main.688faff2.js"
+    "static/js/main.ef7dc5e9.js"
   ]
 }
